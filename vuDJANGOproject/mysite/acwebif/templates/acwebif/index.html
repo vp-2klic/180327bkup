@@ -1,0 +1,9 @@
+{% if latest_log_list %}
+    <ul>
+    {% for log in latest_log_list %}
+       <li>{{ log.log_date }} {{ log.log_text }}</li>
+    {% endfor %}
+    </ul> 
+{% else %}
+    <p>No logs are available.</p>
+{% endif %}
